@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    env_file: .env
+    restart: on-failure
+    volumes:
+      - app-data:/volume
+
+volumes:
+  app-data:
